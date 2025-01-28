@@ -4,8 +4,8 @@
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
   ],
-
   "compilerOptions": {
-    "types": ["chrome"]
+    "types": ["chrome"],
+    "baseUrl": "./src"
   }
 }
