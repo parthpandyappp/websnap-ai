@@ -1,14 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Web TLDR Extension",
+  "name": "WebSnap AI",
   "version": "1.0",
-  "description": "Extension that displays hello world.",
+  "description": "Instantly summarize any webpage's content with AI. View concise summaries in the side panel while browsing to quickly grasp key points and save time reading.",
   "action": {
     "default_icon": {
-      "16": "vite.svg",
-      "48": "vite.svg",
-      "128": "vite.svg"
+      "16": "interpretation.png",
+      "48": "interpretation.png",
+      "128": "interpretation.png"
     }
+  },
+  "icons": {
+    "16": "interpretation.png",
+    "48": "interpretation.png",
+    "128": "interpretation.png"
   },
   "side_panel": {
     "default_path": "index.html"
