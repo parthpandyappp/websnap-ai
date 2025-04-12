@@ -1,3 +1,15 @@
+chrome.action.onClicked.addListener((tab) => {
+  chrome.sidePanel.open({ windowId: tab.windowId });
+});
+
+chrome.runtime.onInstalled.addListener((details) => {
+  if (details.reason === "install") {
+    chrome.windows.getLastFocused().then((window) => {
+      chrome.sidePanel.open({ windowId: window.id });
+    });
+  }
+});
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === "getTabUrl") {
     chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
