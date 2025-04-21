@@ -1,6 +1,6 @@
 {
   "manifest_version": 3,
-  "name": "WebSnap AI",
+  "name": "Web TLDR — AI Summaries for Articles & Blogs",
   "version": "1.0",
   "description": "Instantly summarize any webpage's content with AI. View concise summaries in the side panel while browsing to quickly grasp key points and save time reading.",
   "action": {
