@@ -75,7 +75,7 @@ Once installed:
 ## 📬 Feedback & Contributions
 
 Found a bug? Got a cool feature idea?  
-Feel free to [open an issue](https://github.com/yourusername/welb-tldr-extension/issues) or submit a pull request!
+Feel free to [open an issue](https://github.com/parthpandyappp/websnap-ai/issues) or submit a pull request!
 
 We welcome all contributions and suggestions 🤝
 
