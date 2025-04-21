@@ -1,50 +1,86 @@
-# React + TypeScript + Vite
+# 🚀 Welb TLDR – Chrome Extension for AI Summaries
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Welb TLDR** is a lightweight Chrome extension that uses AI to generate concise summaries of web articles, blog posts, and long-form content – all inside a convenient side panel.
 
-Currently, two official plugins are available:
+![Banner](./public/banner.png)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- 🧠 AI-powered summaries of any webpage
+- ⚡ Opens in a Chrome **side panel** for multitasking
+- 🕒 Saves time while browsing, researching, or reading
+- 🔒 No signups or accounts needed – simple and fast
 
-- Configure the top-level `parserOptions` property like this:
+---
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+## 🛠️ Built With
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/) for blazing fast builds
+- [Gemini AI](https://gemini.google.com/app) API for natural language summaries
+- Chrome Extensions APIs – using **Manifest v3**
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+---
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+## 📦 Installation (Dev Mode)
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/parthpandyappp/websnap-ai.git
+   cd websnap-ai
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Run the dev build:
+
+   ```bash
+   npm run build
+   ```
+
+4. Load it into Chrome:
+
+- Go to chrome://extensions/
+- Enable Developer Mode
+- Click Load unpacked
+- Select the dist/ folder
+
+## 📥 Install from Chrome Web Store
+
+You can directly install the extension from the Chrome Web Store:
+
+👉 [**Welb TLDR - Chrome Extension**](https://chromewebstore.google.com/detail/websnap-ai/ihgpnbdhnbeeacmemamopdkjppjoganj)
+
+Once installed:
+
+1. Pin the extension to your toolbar (optional but handy!)
+2. Click the extension icon or use the Chrome **side panel**
+3. Start summarizing articles instantly 🚀
+
+## 💡 Ideas for Future
+
+- Save history of summaries
+- Multilingual summarization support
+- Voice summary or text-to-speech integration
+- Export/share summaries to Notion, Docs, etc.
+- Smart summarization preferences (e.g. tone, length)
+
+## 📬 Feedback & Contributions
+
+Found a bug? Got a cool feature idea?  
+Feel free to [open an issue](https://github.com/yourusername/welb-tldr-extension/issues) or submit a pull request!
+
+We welcome all contributions and suggestions 🤝
+
+## 📄 License
+
+This project is licensed under the [MIT License](./LICENSE).
+
+###### Made with ❤️ by [Parth](https://www.linkedin.com/in/parthpandyappp/)
