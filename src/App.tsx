@@ -21,6 +21,14 @@ function App() {
     error: null,
   });
 
+  const copyText = async () => {
+    try {
+      await navigator.clipboard.writeText(summaryState.content);
+    } catch (err) {
+      console.error("Failed to copy: ", err);
+    }
+  };
+
   const fetchArticleAndSummary = async (articleUrl: string | null) => {
     if (!articleUrl) {
       setArticleState((prev) => ({ ...prev, error: "No URL provided" }));
@@ -86,11 +94,13 @@ function App() {
 
     if (summaryState.content) {
       return (
-        <div className="flex flex-col gap-4 p-4 pt-3">
+        <div className="flex flex-col gap-4 p-4 pt-3 mb-6">
           <div className="flex flex-col w-full h-full gap-4">
             <Header
-              favicon={articleState.data.favicon}
+              copyToClipboardFn={copyText}
               source={articleState.data.source}
+              favicon={articleState.data.favicon}
+              showCopyToClipboard={Boolean(summaryState.content.length)}
             />
             {articleState.data.image && (
               <img
