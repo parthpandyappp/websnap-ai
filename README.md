@@ -8,6 +8,7 @@
 
 ## ✨ Features
 
+- 🗒️ Copy summary to your clipboard
 - 🧠 AI-powered summaries of any webpage
 - ⚡ Opens in a Chrome **side panel** for multitasking
 - 🕒 Saves time while browsing, researching, or reading
