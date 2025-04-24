@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "Web TLDR — AI Summaries for Articles & Blogs",
-  "version": "1.0",
-  "description": "Instantly summarize any webpage's content with AI. View concise summaries in the side panel while browsing to quickly grasp key points and save time reading.",
+  "version": "2.0",
+  "description": "Instantly summarize any webpage's content with AI",
   "action": {
     "default_icon": {
       "16": "interpretation.png",
