@@ -5,7 +5,7 @@ provider:
   runtime: nodejs18.x
   region: us-east-1
   environment:
-    GEMINI_API_KEY: ${env:GEMINI_API_KEY} # Uses your local .env
+    REPLICATE_API_TOKEN: ${env:REPLICATE_API_TOKEN} # Uses your local .env
 
 functions:
   app:
