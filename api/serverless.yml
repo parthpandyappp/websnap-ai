@@ -4,8 +4,14 @@ provider:
   name: aws
   runtime: nodejs18.x
   region: us-east-1
+  # Default Lambda timeout is 6s, which would abort a request mid-retry.
+  # API Gateway (REST) caps integration timeout at 29s, so match that.
+  timeout: 29
+  memorySize: 512
   environment:
     REPLICATE_API_TOKEN: ${env:REPLICATE_API_TOKEN} # Uses your local .env
+    SUMMARY_MODEL: ${env:SUMMARY_MODEL, "anthropic/claude-3.5-haiku"}
+    SUMMARY_FALLBACK_MODEL: ${env:SUMMARY_FALLBACK_MODEL, "meta/meta-llama-3.1-405b-instruct"}
 
 functions:
   app:
